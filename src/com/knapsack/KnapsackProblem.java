@@ -47,16 +47,15 @@ public class KnapsackProblem {
 
     private static int unboundedKnapsack(int[] wt, int[] val, int W) {
 
-        int sub[] = new int[W + 1];
+        int dpTable[] = new int[W + 1];
 
         for (int i = 0; i < W + 1; i++) {
             for (int j = 0; j < wt.length; j++) {
                 if (wt[j] <= i) {
-                    sub[i] = Math.max(sub[i], sub[i - wt[j]] +
-                            val[j]);
+                    dpTable[i] = Math.max(dpTable[i], dpTable[i - wt[j]] + val[j]);
                 }
             }
         }
-        return sub[W];
+        return dpTable[W];
     }
 }
