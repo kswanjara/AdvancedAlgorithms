@@ -1,5 +1,7 @@
 package com.longestsubseq;
 
+import java.util.Arrays;
+
 public class LongestSubsequence {
     public static void main(String[] args) {
         int[] seq = {10, 9, 2, 5, 3, 7, 101, 18};
@@ -8,7 +10,15 @@ public class LongestSubsequence {
         System.out.println("Length of longest subsequence : " + longestSubSeq);
     }
 
+    /**
+     * The time complexity of this algorithm is O(n.log n).
+     *
+     * @param seq given sequence
+     * @return int representing the length of the lognest increasing subsequence.
+     *
+     */
     private int findLongestSubsequence(int[] seq) {
+
         int longestSubseq = 1;
         if(seq.length == 0){
             return 0;
@@ -28,5 +38,8 @@ public class LongestSubsequence {
             longestSubseq = Math.max(longestSubseq, dpTable[i]);
         }
         return longestSubseq;
+
     }
 }
+
+

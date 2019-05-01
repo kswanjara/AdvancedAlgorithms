@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/AdvancedAlgorithms.iml" filepath="$PROJECT_DIR$/.idea/AdvancedAlgorithms.iml" />
       <module fileurl="file://$PROJECT_DIR$/AdvancedAlgorithms.iml" filepath="$PROJECT_DIR$/AdvancedAlgorithms.iml" />
     </modules>
   </component>
