@@ -59,9 +59,9 @@ public class KMPSubstringSearch {
     public static void main(String[] args) {
         String text = "abxabcabcabyabcaby";
         String pattern = "abcaby";
-//        String pattern = "aabaabaaa";
 
         KMPSubstringSearch kmp = new KMPSubstringSearch();
         List<Integer> positions = kmp.searchForPattern(text.toCharArray(), pattern.toCharArray());
+        System.out.println("Pattern found at the indexes : " + positions.toString());
     }
 }
